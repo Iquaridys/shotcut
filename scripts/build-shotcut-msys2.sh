@@ -856,6 +856,8 @@ function configure_compile_install_subproject {
   # Special hack for mlt
   if test "mlt" = "$1"; then
     export CXXFLAGS="$CFLAGS -std=c++11"
+    cmd cat /d/a/shotcut/shotcut/build/Shotcut/lib/pkgconfig/libavformat.pc
+    cmd ls /d/a/shotcut/shotcut/build/Shotcut/include
   fi
 
   # Special hack for movit
